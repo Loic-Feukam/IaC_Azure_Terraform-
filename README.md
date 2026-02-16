@@ -5,7 +5,9 @@ Déploiement automatisé d’une infrastructure cloud sécurisée sur Microsoft 
 ## Description de l’architecture déployée
 
 1️⃣ Création d’un groupe de ressources.
+
 2️⃣ Mise en place du réseau virtuel.
+
 3️⃣ Sous-réseau public.
 
 Le sous-réseau public héberge une machine virtuelle avec une adresse IP publique permettant l’accès depuis l’extérieur.
