@@ -32,4 +32,4 @@ Deux Network Security Groups (NSG) sont définis afin de contrôler les flux ré
 
  ### Schéma de l’architecture ###
 
-![](images.png)
+![Schéma de l'architecture](images.png)
