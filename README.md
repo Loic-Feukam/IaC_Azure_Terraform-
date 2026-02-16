@@ -1,6 +1,6 @@
 # IaC_Azure_Terraform-
 
-Déploiement automatisé d’une infrastructure cloud sécurisée sur Microsoft Azure avec Terraform. Architecture réseau segmentée (public / privé), machines virtuelles, contrôle d’accès SSH via Network Security Groups et  compte de stockage.
+Déploiement automatisé d’une infrastructure cloud sécurisée sur Microsoft Azure avec Terraform. Architecture réseau segmentée (public / privé), machines virtuelles, contrôle d’accès SSH via Network Security Groups et création d'un compte de stockage.
 
 ## Description de l’architecture déployée
 
