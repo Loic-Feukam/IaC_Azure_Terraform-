@@ -22,18 +22,18 @@ resource "azurerm_network_interface" "nic-public" {
 }
 
 resource "azurerm_linux_virtual_machine" "vm-public" {
-  name                = "vm-public"
+  name                = var.vm-public
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_D2alds_v7"
-  admin_username      = "loicmeng"
+  admin_username      = var.nom
   network_interface_ids = [
     azurerm_network_interface.nic-public.id,
   ]
 
   admin_ssh_key {
-    username   = "loicmeng"
-    public_key = file("~/.ssh/id_rsa.pub")
+    username   = var.nom
+    public_key = file(var.ssh_key_vm_public)
   }
 
   os_disk {

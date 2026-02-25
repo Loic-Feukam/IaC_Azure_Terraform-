@@ -11,19 +11,19 @@ resource "azurerm_network_interface" "nic-prive" {
 }
 
 resource "azurerm_linux_virtual_machine" "vm-prive" {
-  name                = "vm-prive"
+  name                = var.vm-prive
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_D2alds_v7"
-  admin_username      = "loicmeng"
+  admin_username      = var.nom
   network_interface_ids = [
     azurerm_network_interface.nic-prive.id,
   ]
 
 
 admin_ssh_key {
-    username   = "loicmeng"
-    public_key = file("~/.ssh/id_rsa-vmprive.pub")
+    username   = var.nom
+    public_key = file(var.ssh_key_vm_prive)
   }
 
   os_disk {
